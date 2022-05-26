@@ -1,9 +1,8 @@
 <template>
-  <div>Check</div>
+  <div class="about"></div>
 </template>
-
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'AboutPage',
 }
 </script>

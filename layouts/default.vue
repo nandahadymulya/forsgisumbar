@@ -9,10 +9,7 @@
           class="mx-auto flex py-12 lg:px-24 md:px-16 sm:px-8 px-8 items-center justify-between lg:justify-start"
         >
           <a href="#">
-            <img
-              src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header2/Header-2-5.png"
-              alt=""
-            />
+            <img src="forsgi.png" width="50" alt="" />
           </a>
           <div class="flex mr-0 lg:hidden cursor-pointer">
             <svg
@@ -47,25 +44,15 @@
                 alt=""
               />
             </a>
-            <a
+            <NuxtLink
               class="nav-text text-lg font-semibold leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative active"
-              href="#"
-              >Home</a
+              to="/"
+              >Home</NuxtLink
             >
-            <a
+            <NuxtLink
               class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative"
-              href="#"
-              >Feature</a
-            >
-            <a
-              class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative"
-              href="#"
-              >Pricing</a
-            >
-            <a
-              class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative"
-              href="#"
-              >About Us</a
+              to="/about"
+              >About Us</NuxtLink
             >
             <a
               class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative"
@@ -125,23 +112,26 @@
             class="lg:flex-grow lg:w-1/2 flex flex-col lg:items-start lg:text-left mb-3 md:mb-12 lg:mb-0 items-center text-center"
           >
             <p class="small-text mb-8 leading-relaxed font-semibold text-sm">
-              FREE 30 DAY TRIAL
+              PROVINSI SUMATERA BARAT
             </p>
             <h1
               class="title-font sm:text-5xl lg:text-6xl text-4xl mb-8 font-semibold sm:leading-tight"
             >
-              The best way<br class="lg:block hidden" />
-              to organize your online learning
+              Jeli dalam Pembinaan<br class="lg:block hidden" />
+              Peduli dalam Karakter, Teliti dalam Talenta
             </h1>
             <div
               class="inline-block items-center mx-auto lg:mx-0 lg:flex justify-center lg:space-x-8 md:space-x-2 sm:space-x-3 space-x-0"
             >
-              <button
+              <NuxtLink
+                to="/about"
                 class="btn-fill inline-flex font-semibold text-white text-base py-4 px-6 rounded-xl mb-4 lg:mb-0 md:mb-0 focus:outline-none hover:shadow-lg"
               >
-                Try it free
-              </button>
-              <button
+                Get to know us
+              </NuxtLink>
+              <a
+                href="https://www.youtube.com/channel/UC18qpZzpkEHp-NgYalKj9hQ"
+                target="_blank"
                 class="btn-outline font-normal text-black text-base py-4 px-6 rounded-xl focus:outline-none bg-transparent rounded hover:border-transparent"
               >
                 <div class="flex items-center">
@@ -158,9 +148,9 @@
                       fill="#555B61"
                     />
                   </svg>
-                  Watch the video
+                  Watch our video
                 </div>
-              </button>
+              </a>
             </div>
           </div>
           <!-- Right Column -->
@@ -178,7 +168,7 @@
 </template>
 <script>
 export default {
-  name: 'DefaultLayout',
+  name: 'LandingPage',
 }
 </script>
 <style>
